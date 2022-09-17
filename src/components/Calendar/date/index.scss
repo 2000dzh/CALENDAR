@@ -1,0 +1,65 @@
+.my-calendar-table {
+	width: 100%;
+	border-collapse: collapse;
+	tHead {
+		border-bottom: 1px solid #ddd;
+	}
+
+	tr {
+		height: 38px;
+	}
+
+	td {
+		text-align: center;
+	}
+
+	th {
+		font-weight: normal;
+	}
+
+	.day {
+		&.rest-day {
+			color: #ccc;
+		}
+
+		&.current-day {
+			cursor: pointer;
+		}
+
+		&.current {
+			color: orange;
+			font-weight: bold;
+		}
+
+		&.selected {
+			color: #fff;
+			background-color: orange;
+		}
+	}
+}
+
+.control-area {
+	height: 30px;
+	border-bottom: 1px solid #ddd;
+	line-height: 30px;
+
+	.control-btn {
+		float: left;
+		display: block;
+		width: 30px;
+		height: 30px;
+		color: orange;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.control-show {
+		float: left;
+		display: block;
+		width: 204px;
+		text-align: center;
+		cursor: pointer;
+		color: orange;
+		font-weight: bold;
+	}
+}
